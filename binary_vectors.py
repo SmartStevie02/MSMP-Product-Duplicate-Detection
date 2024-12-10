@@ -7,9 +7,6 @@ from collections import defaultdict, OrderedDict
 from ordered_set import OrderedSet
 
 
-""" Finds the model words
-:param data: the data to be converted
-"""
 def create_model_words(data, brands):
     title_regex = r'([a-zA-Z0-9]*((\d*\.)?\d+[^0-9, ]+)[a-zA-Z0-9]*)'
     key_words_regex = r'^\d+\.\d+|\b\d+:\d+\b|(?<!\S)\d{3,}\s*[x]\s*\d{3,}(?!\S)'
@@ -29,10 +26,6 @@ def create_model_words(data, brands):
     return(model_words)
 
 
-""" Creates binary vectors of data
-:param data: the data to be converted
-:param models_words: the previously found model_words
-"""
 def create_binary_vectors(model_words, data):
     print("Begin binary vector creation...\n")
 
