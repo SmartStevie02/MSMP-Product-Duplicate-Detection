@@ -19,7 +19,7 @@ The data that is used within this GitHub is uploaded in the `TVs-all-merged.json
 
 `evaluation.py`: evaluates the clusters returned by msm and returns various evaluation metrics. Also includes a function used for the graphing of results.
 
-`main.py`: combines all the previous functions into a working model architecture.
+`main.py`: combines all the previous functions into a working model architecture. This can be run in one go.
 
 `similarities.py`: defines various similarity functions which are used throughout the project.
 
