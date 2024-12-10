@@ -4,10 +4,7 @@ import numpy as np
 from primePy import primes
 from collections import OrderedDict
 
-""" Creates a min-hashed signature matrix
-:param binary_vectors: the set of binary vectors to be minhashed
-:param reduction: the factor of reduction
-"""
+
 def min_hash(binary_vectors, reduction):
 
     num_vec = len(binary_vectors)
