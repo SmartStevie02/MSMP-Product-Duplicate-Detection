@@ -139,9 +139,9 @@ def main(args):
 if __name__ == "__main__":
     # parse CLI args
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--path", default="C:/Users/livin/OneDrive/University/Master/Block 2/Computer Science for BA/Assignment/Data/TVs-all-merged.json", 
+    parser.add_argument("--path", default="C:/Users/livin/InsertOwnPath", 
                         type=str, help="The path to the data to be cleaned.")
-    parser.add_argument("--path_res", default="C:/Users/livin/OneDrive/University/Master/Block 2/Computer Science for BA/Assignment/Results/", 
+    parser.add_argument("--path_res", default="C:/Users/livin/InsertOwnPath", 
                         type=str, help="The path where the graphs are to be saved.")
     parser.add_argument("--bootstraps", default=5, type=int, help="The number of bootstraps you wish to do.")
     args = parser.parse_args()
