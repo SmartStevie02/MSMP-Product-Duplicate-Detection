@@ -8,11 +8,6 @@ import msm
 from collections import defaultdict, OrderedDict
 from functools import reduce
 
-""" Implements Local-Sensitivity Hashing
-:param sig_matrix: signature matrix M 
-:param data: the data to be made into candidate pairs
-:b: num bands the matrix
-"""
 def LSH(sig_matrix, data: OrderedDict,  b: int):
     candidate_pairs = defaultdict(list)
 
